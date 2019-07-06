@@ -171,6 +171,7 @@ bar {
 
 ### Modifications ###
 
+# ---Audio---
 # Pulse Audio controls: xmodmap -pke
 # volume +
 bindsym XF86AudioRaiseVolume exec "amixer -D pulse set Master 10%+"
@@ -179,13 +180,19 @@ bindsym XF86AudioLowerVolume exec "amixer -D pulse set Master 10%-"
 # toogle mute/unmute
 bindsym XF86AudioMute exec "amixer -D pulse set Master playback toggle"
 
+# ---scrolling and tap---
 # sudo apt install xserver-xorg-input-libinput
 # touchpad tap enabled: xinput --list; xinput --list-props 12
 exec "xinput --set-prop 'Synaptics TM3075-002' 'libinput Tapping Enabled' 1"
 exec "xinput --set-prop 'Synaptics TM3075-002' 'libinput Natural Scrolling Enabled' 1"
 
+# ---Displays---
 # xrandr -q
 exec "xrandr --output DP-2-3 --primary --right-of eDP-1"
 
-
+# ---WLAN in Statusbar---
 exec "nm-applet"
+
+# ---Lockscreen---
+# dependencies: imagemagick, scrot
+bindsym $mod+Shift+x exec $HOME/.bin/scripts/lock.sh
