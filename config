@@ -180,6 +180,16 @@ bindsym XF86AudioLowerVolume exec "amixer -D pulse set Master 5%-"
 # toogle mute/unmute
 bindsym XF86AudioMute exec "amixer -D pulse set Master playback toggle"
 
+# Sreen brightness controls
+# sudo nano /etc/X11/xorg.conf
+# Section "Device"
+# Identifier  "Card0"
+# Driver      "intel"
+# Option      "Backlight"  "NAME OF THE FOLDER"
+# EndSection
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
+
 # ---scrolling and tap---
 # sudo apt install xserver-xorg-input-libinput
 # touchpad tap enabled: xinput --list; xinput --list-props 12
