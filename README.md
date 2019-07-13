@@ -9,3 +9,5 @@ Features:
 - sound keys
 - multiple monitors
 - wlan in statusbar
+- lockscreen
+- screenshot
