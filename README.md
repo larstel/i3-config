@@ -7,6 +7,7 @@ Features:
 - natural scrolling
 - tapping
 - sound keys
+- brightness keys
 - multiple monitors
 - wlan in statusbar
 - lockscreen
