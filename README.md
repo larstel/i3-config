@@ -12,3 +12,7 @@ Features:
 - wlan in statusbar
 - lockscreen
 - screenshot
+- second display
+
+TODO:
+- mark with arrow keys
