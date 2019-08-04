@@ -13,7 +13,7 @@ Features:
 - wlan in statusbar
 - lockscreen
 - screenshot
-- display management
+- display management (arandr for a GUI management)
 
 TODO:
 - mark with arrow keys
