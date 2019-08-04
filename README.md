@@ -1,6 +1,7 @@
 # i3-config
 
 This i3 config file is for my Thinkpad X250.
+PATH: ~/.config/i3/config
 
 Features:
 - standard i3 shortcuts
@@ -12,7 +13,7 @@ Features:
 - wlan in statusbar
 - lockscreen
 - screenshot
-- second display
+- display management
 
 TODO:
 - mark with arrow keys
