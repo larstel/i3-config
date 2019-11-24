@@ -14,6 +14,7 @@ Features:
 - lockscreen
 - screenshot
 - display management (arandr for a GUI management)
+- battery alert
 
 TODO:
 - mark with arrow keys
