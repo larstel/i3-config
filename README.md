@@ -14,7 +14,7 @@ Features:
 - lockscreen
 - screenshot
 - display management (arandr for a GUI management)
-- battery alert
+- battery alert (https://github.com/rjekker/i3-battery-popup)
 
 TODO:
 - mark with arrow keys
