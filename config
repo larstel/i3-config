@@ -205,11 +205,14 @@ exec "nm-applet"
 
 # ---Lockscreen---
 # dependencies: imagemagick, scrot
-bindsym $mod+Shift+x exec $HOME/.bin/scripts/lock.sh
-exec --no-startup-id xautolock -time 4 -locker "$HOME/.bin/scripts/lock.sh"
+bindsym $mod+Shift+x exec $HOME/.config/i3/config_data/lockscreen/lock.sh #$HOME/.bin/scripts/lock.sh
+exec --no-startup-id xautolock -time 4 -locker "$HOME/.config/i3/config_data/lockscreen/lock.sh" #"$HOME/.bin/scripts/lock.sh"
 
 # ---screenshots---
 bindsym $mod+Shift+s exec gnome-screenshot -i
 
 # ---second display
 bindsym $mod+Shift+d exec xrandr --auto
+
+# ---battery alert https://github.com/rjekker/i3-battery-popup
+exec --no-startup-id $HOME/.config/i3/config_data/i3-battery-popup-master/i3-battery-popup
