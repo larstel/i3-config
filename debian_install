@@ -10,5 +10,6 @@ deb http://deb.debian.org/debian buster-updates main contrib non-free
 deb-src http://deb.debian.org/debian buster-updates main contrib non-free
 
 apt-get update && apt-get upgrade -y
+apt update && apt install firmware-iwlwifi
 apt-get install i3 xorg suckless-tools
 startx
